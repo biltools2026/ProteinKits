@@ -1,5 +1,9 @@
 ProteinKits is a program for protein structure prediction.
 
+Download link
+https://pan.baidu.com/s/1IwsqQBPW_bUbmtCzp2wqmA?pwd=1234
+code: 1234
+
 Some running program are as below:
 
 Example 1
