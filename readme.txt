@@ -1,4 +1,4 @@
-ProteinKits is a program for protein structure prediction.
+ProteinKits is a program for protein 3D structure prediction.
 
 Download link
 https://pan.baidu.com/s/1IwsqQBPW_bUbmtCzp2wqmA?pwd=1234
