@@ -1,5 +1,7 @@
 ProteinKits is a program for protein 3D structure prediction.
 
+Currently, the ProteinKits program can run in Windows Operation System.
+
 Download link
 https://pan.baidu.com/s/1IwsqQBPW_bUbmtCzp2wqmA?pwd=1234
 code: 1234
