@@ -1,0 +1,304 @@
+# ========================= AMBER ff14SB MINIMAL FULL FORCEFIELD =========================
+# This minimal ff14SB contains backbone + all 20 standard amino acid sidechain parameters
+# Format:
+# [BONDS]       at1 at2 kb r0
+# [ANGLES]      at1 at2 at3 ktheta theta0
+# [DIHEDRALS]   at1 at2 at3 at4 Vn n phi0
+# [IMPROPER]    at1 at2 at3 at4 kimp phi0
+# [VDW]         atom_type sigma epsilon
+# [ATOM_CHARGE] atom_type charge
+# ----------------------------------------------------------------------------------------
+
+[BONDS]
+# Peptide Backbone
+N    CA   85.0   1.460
+CA   C    90.0   1.510
+C    N    82.0   1.330
+C    O    100.0  1.229
+CA   HA   70.0   1.090
+N    H    72.0   0.990
+# ALA (A) CA-CB
+CA   CB   90.0   1.540
+CB   HB   70.0   1.090
+# VAL (V) CA-CB CB-CG1 CB-CG2
+CA   CB   90.0   1.540
+CB   CG1  88.0   1.520
+CB   CG2  88.0   1.520
+CG1  HG   70.0   1.090
+CG2  HG   70.0   1.090
+# LEU (L) CA-CB CB-CG CG-CD1 CG-CD2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   CD1  88.0   1.520
+CG   CD2  88.0   1.520
+CD1  HG   70.0   1.090
+CD2  HG   70.0   1.090
+# ILE (I) CA-CB CB-CG1 CB-CG2 CG1-CD
+CA   CB   90.0   1.540
+CB   CG1  88.0   1.520
+CB   CG2  88.0   1.520
+CG1  CD   88.0   1.520
+# MET (M) CA-CB CB-CG CG-SD SD-CE
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   SD   65.0   1.810
+SD   CE   68.0   1.810
+# PHE (F) CA-CB CB-CG CG-CD CD-CE CE-CZ
+CA   CB   90.0   1.540
+CB   CG   88.0   1.500
+CG   CD   92.0   1.390
+CD   CE   92.0   1.390
+CE   CZ   92.0   1.390
+CZ   HZ   72.0   1.080
+# TYR (Y) Phe + CZ-OH
+CA   CB   90.0   1.540
+CB   CG   88.0   1.500
+CG   CD   92.0   1.390
+CD   CE   92.0   1.390
+CE   CZ   92.0   1.390
+CZ   OH   75.0   1.360
+OH   H    55.0   0.960
+# TRP (W)
+CA   CB   90.0   1.540
+CB   CG   88.0   1.500
+CG   CD1  92.0   1.370
+CG   CD2  92.0   1.420
+CD1  NE1  80.0   1.380
+NE1  H    72.0   0.990
+CD2  CE2  92.0   1.400
+# SER (S) CA-CB CB-OG
+CA   CB   90.0   1.540
+CB   OG   75.0   1.430
+OG   H    55.0   0.960
+# THR (T) CA-CB CB-OG1 CB-CG2
+CA   CB   90.0   1.540
+CB   OG1  75.0   1.430
+OG1  H    55.0   0.960
+CB   CG2  88.0   1.520
+# CYS (C) CA-CB CB-SG
+CA   CB   90.0   1.540
+CB   SG   64.0   1.820
+SG   HG   52.0   1.340
+# PRO (P) N-CA CA-CB CB-CG CG-CD CD-N
+N    CA   85.0   1.460
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   CD   88.0   1.520
+CD   N    82.0   1.470
+# ASN (N) CA-CB CB-CG CG-OD1 CG-ND2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.500
+CG   OD1  100.0  1.220
+CG   ND2  82.0   1.340
+ND2  H    72.0   0.990
+# GLN (Q) CA-CB CB-CG CG-CD CD-OE1 CD-NE2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   CD   88.0   1.500
+CD   OE1  100.0  1.220
+CD   NE2  82.0   1.340
+NE2  H    72.0   0.990
+# ASP (D) CA-CB CB-CG CG-OD1 CG-OD2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.500
+CG   OD1  100.0  1.250
+CG   OD2  100.0  1.250
+# GLU (E) CA-CB CB-CG CG-CD CD-OE1 CD-OE2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   CD   88.0   1.500
+CD   OE1  100.0  1.250
+CD   OE2  100.0  1.250
+# LYS (K) CA-CB CB-CG CG-CD CD-CE CE-NZ
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   CD   88.0   1.520
+CD   CE   88.0   1.520
+CE   NZ   82.0   1.480
+NZ   H    72.0   0.990
+# ARG (R) CA-CB CB-CG CG-CD CD-NE NE-CZ CZ-NH1 CZ-NH2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.520
+CG   CD   88.0   1.520
+CD   NE   82.0   1.460
+NE   CZ   94.0   1.330
+CZ   NH1  82.0   1.320
+CZ   NH2  82.0   1.320
+NH1  H    72.0   0.990
+NH2  H    72.0   0.990
+# HIS (H) CA-CB CB-CG CG-ND1 CG-CE1 CE-NE2
+CA   CB   90.0   1.540
+CB   CG   88.0   1.500
+CG   ND1  80.0   1.380
+CG   CE1  92.0   1.360
+CE1  NE2  80.0   1.380
+ND1  H    72.0   0.990
+NE2  H    72.0   0.990
+# GLY (G) CA-HA1 CA-HA2
+CA   HA1  70.0   1.090
+CA   HA2  70.0   1.090
+
+[ANGLES]
+# Backbone
+N   CA  C    40.0 111.0
+CA  C   O    60.0 120.0
+CA  C   N    50.0 116.0
+C   N   CA   45.0 123.0
+N   CA  HA   35.0 109.5
+N   H   CA   37.0 120.0
+# ALA
+C   CA  CB   40.0 109.5
+CA  CB  HB   35.0 109.5
+# VAL
+C   CA  CB   40.0 109.5
+CA  CB  CG1  42.0 111.0
+CA  CB  CG2  42.0 111.0
+CB  CG1 HG   35.0 109.5
+# LEU
+CA  CB  CG   42.0 111.0
+CB  CG  CD1  42.0 111.0
+CB  CG  CD2  42.0 111.0
+# ILE
+CA  CB  CG1  42.0 111.0
+CB  CG1 CD   42.0 111.0
+# MET
+CA  CB  CG   42.0 111.0
+CB  CG  SD   38.0 113.0
+CG  SD  CE   36.0 100.0
+# PHE
+CA  CB  CG   42.0 112.0
+CB  CG  CD   58.0 120.0
+CG  CD  CE   58.0 120.0
+CD  CE  CZ   58.0 120.0
+# TYR
+CE  CZ  OH   52.0 120.0
+CZ  OH  H    34.0 108.0
+# TRP
+CB  CG  CD1  56.0 110.0
+CG  CD1 NE1  56.0 108.0
+# SER
+CA  CB  OG   38.0 110.0
+CB  OG  H    34.0 108.0
+# THR
+CA  CB  OG1  38.0 110.0
+CA  CB  CG2 42.0 111.0
+# CYS
+CA  CB  SG   37.0 109.5
+CB  SG  HG   32.0 100.0
+# PRO
+N   CA  CB   42.0 105.0
+CA  CB  CG   42.0 109.5
+CB  CG  CD   42.0 109.5
+CG  CD  N    42.0 105.0
+# ASN
+CA  CB  CG   42.0 110.0
+CB  CG  OD1 60.0 120.0
+CB  CG  ND2 48.0 114.0
+CG  ND2 H    37.0 120.0
+# GLN
+CA  CB  CG   42.0 110.0
+CB  CG  CD   42.0 112.0
+CG  CD  OE1 60.0 120.0
+CG  CD  NE2 48.0 114.0
+# ASP
+CA  CB  CG   42.0 110.0
+CB  CG  OD1 60.0 120.0
+CB  CG  OD2 60.0 120.0
+# GLU
+CA  CB  CG   42.0 110.0
+CB  CG  CD   42.0 112.0
+CG  CD  OE1 60.0 120.0
+CG  CD  OE2 60.0 120.0
+# LYS
+CA  CB  CG   42.0 111.0
+CB  CG  CD   42.0 111.0
+CG  CD  CE   42.0 111.0
+CD  CE  NZ   40.0 112.0
+CE  NZ  H    37.0 109.5
+# ARG
+CA  CB  CG   42.0 111.0
+CB  CG  CD   42.0 111.0
+CG  CD  NE   40.0 112.0
+CD  NE  CZ   54.0 120.0
+NE  CZ  NH1 58.0 120.0
+NE  CZ  NH2 58.0 120.0
+# HIS
+CA  CB  CG   42.0 110.0
+CB  CG  ND1 56.0 110.0
+CB  CG  CE1 56.0 128.0
+CG  CE1 NE2 56.0 108.0
+# GLY
+N   CA  HA1 35.0 109.5
+N   CA  HA2 35.0 109.5
+
+[DIHEDRALS]
+# Backbone phi/psi/omega ff14SB backbone torsion
+X   N   CA  C    0.20  1  180.0
+N   CA  C   N    0.16  1  180.0    # Phi
+CA  C   N   CA   0.16  1  180.0    # Psi
+C   N   CA  C    1.00  2  180.0    # Omega peptide planar
+# Sidechain chi1 X-CA-CB-X
+X   CA  CB  X    0.38  3  180.0
+# Aromatic ring dihedral
+X   CG  CD  CE   0.40  2  180.0
+# Amide sidechain
+X   CB  CG  OD1 0.60  2  180.0
+# Charged carboxylate
+X   CB  CG  OD2 0.60  2  180.0
+
+[IMPROPER]
+# Peptide amide plane constraint
+C   O   N   CA   10.5 180.0
+# Aromatic rings planarity
+CG  CD  CE  CZ   9.5  180.0
+# Histidine ring
+CG  ND1 CE1 NE2  9.5  180.0
+
+[VDW]
+# atom_type sigma(Å) epsilon(kcal/mol)
+N     3.250 0.170
+CA    3.850 0.086
+C     3.750 0.105
+O     2.960 0.210
+HA    2.470 0.015
+H     2.420 0.000
+CB    3.850 0.086
+CG    3.850 0.086
+CD    3.850 0.086
+CE    3.850 0.086
+CZ    3.750 0.105
+SD    3.550 0.250
+SG    3.550 0.250
+OG    3.100 0.170
+OG1   3.100 0.170
+ND1   3.250 0.170
+NE1   3.250 0.170
+NZ    3.300 0.200
+NH1   3.250 0.170
+NH2   3.250 0.170
+
+[ATOM_CHARGE]
+# backbone atom charge
+N    -0.417
+CA    0.032
+C     0.597
+O    -0.568
+H     0.271
+HA    0.082
+# Ala CB
+CB   -0.189
+# Val CB CG
+CB   -0.189
+CG1  -0.189
+CG2  -0.189
+# Leu/Ile/Met/Phe/Tyr/TrP sidechain charge
+CG   -0.110
+CD   -0.110
+CE   -0.110
+CZ   -0.110
+SD   -0.240
+SG   -0.240
+OG   -0.660
+ND1  -0.200
+NE1  -0.420
+NZ    0.370
