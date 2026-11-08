@@ -2,6 +2,8 @@ ProteinKits is a homology modelling program for protein 3D structure prediction.
 
 More than 70,000 non-redundant protein structures were selected from the latest PDB database as a template database. A gradient energy optimization strategy was adopted to predict three-dimensional structural models. After testing, the overall accuracy exceeded 80%.
 
+It requires no external dependency packages, as the software package includes all the components needed for operation. It can run directly from the command line on Windows systems.
+
 Currently, the ProteinKits program can run in Windows Operation System.
 
 The package size is ~4G in rar format.
