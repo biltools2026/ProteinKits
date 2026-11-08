@@ -1,6 +1,8 @@
-ProteinKits is a program for protein 3D structure prediction.
+ProteinKits is a homology modelling program for protein 3D structure prediction.
 
 Currently, the ProteinKits program can run in Windows Operation System.
+
+The package size is ~4G in rar format.
 
 Download link
 https://pan.baidu.com/s/1IwsqQBPW_bUbmtCzp2wqmA?pwd=1234
